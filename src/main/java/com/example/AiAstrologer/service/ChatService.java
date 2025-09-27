@@ -35,7 +35,7 @@ public class ChatService {
                 .append("Return Markdown with these exact H2 headings:\n")
                 .append("## Overview\n## Future Prediction\n## Health\n## Career\n## Wealth\n")
                 .append("Use bullet points under each section.\n")
-                .append("After first time answer you should ignore the heading and focused on answering actual questions\n")
+                .append("After first time answer you should ignore the heading and focused on answering actual questions in ten lines.\n")
                 .append("End with a final line:\n\n")
                 .append("**✨ AI can make mistakes. This guidance is for reference only.**\n\n")
                 .append("User details:\n")
