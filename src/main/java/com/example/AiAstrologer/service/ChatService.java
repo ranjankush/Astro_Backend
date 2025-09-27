@@ -34,8 +34,9 @@ public class ChatService {
                 .append("Answer only astrology/palmistry/future questions. Keep it concise.\n")
                 .append("Return Markdown with these exact H2 headings:\n")
                 .append("## Overview\n## Future Prediction\n## Health\n## Career\n## Wealth\n")
-                .append("Use bullet points under each section. End with a final line:\n")
+                .append("Use bullet points under each section.\n")
                 .append("After first time answer you should ignore the heading and focused on answering actual questions\n")
+                .append("End with a final line:\n\n")
                 .append("**✨ AI can make mistakes. This guidance is for reference only.**\n\n")
                 .append("User details:\n")
                 .append("- Name: ").append(Optional.ofNullable(name).orElse("Unknown")).append("\n")
@@ -43,6 +44,7 @@ public class ChatService {
                 .append("- DOB: ").append(Optional.ofNullable(dob).orElse("Unknown")).append("\n")
                 .append("- Place: ").append(Optional.ofNullable(place).orElse("Unknown")).append("\n")
                 .append("- Question: ").append(Optional.ofNullable(userMessage).orElse("")).append("\n");
+
         return p.toString();
     }
 
